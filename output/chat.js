@@ -1,9 +1,6 @@
 const chat = document.querySelector(".chat__messages");
-
 const fiUri = "wss://socketsbay.com/wss/v2/1/c7a704f42144ac9d0338cc7b42f7065e/";
-
 let chatSocket = new WebSocket(fiUri);
-
 chatSocket.onopen = function (event) {
   chat.innerHTML += showMsg("socket is open", "open");
 };
@@ -16,11 +13,9 @@ chatSocket.onmessage = function (event) {
 chatSocket.onerror = function (event) {
   chat.innerHTML += showMsg(event.data, "error");
 };
-
 document.querySelector(".chat__exit").onclick = function () {
   chatSocket.close();
 };
-
 document.querySelector(".chat__form").onsubmit = function () {
   event.preventDefault();
   let userName = localStorage.getItem("userName");
@@ -30,12 +25,10 @@ document.querySelector(".chat__form").onsubmit = function () {
       localStorage.setItem("userName", userName);
     }
   }
-
   if (userName) {
     chatSocket.send(event.target.elements.msg.value);
     chat.innerHTML += showMsg(event.target.elements.msg.value, "outcome");
   }
-
   event.target.reset();
 };
 

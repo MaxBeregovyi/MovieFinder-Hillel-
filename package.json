@@ -1,0 +1,24 @@
+{
+  "name": "moviefinder-hillel--main",
+  "version": "1.0.0",
+  "description": "test poject",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaxBeregovyi/MovieFinder-Hillel-.git"
+  },
+  "author": "Max Beregovyi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MaxBeregovyi/MovieFinder-Hillel-/issues"
+  },
+  "homepage": "https://github.com/MaxBeregovyi/MovieFinder-Hillel-#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "prettier": "3.2.5"
+  }
+}
