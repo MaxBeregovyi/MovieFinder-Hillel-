@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>MovieFinder</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+          rel="stylesheet"/>
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+<body>
+<!---->
+<header class="center">
+    <a class="finder__title" href="index.html">
+        Movie Finder
+    </a>
+</header>
+<!---->
+<div class="movie__finder">
+<form class="center form" name="searchMovieForm">
+    <input class="form__input" name="query" placeholder="Enter movie title" type="text">
+    <button class="form__btn">
+        <span class="material-symbols-outlined">
+            search
+        </span>
+    </button>
+</form>
+<div class="find__films">
+    <h3>Latest 5 searches:</h3>
+    <ul class="find__films--list">
+    <li></li>
+    </ul>
+</div>
+</div>
+
+<main class="center main">
+    <section class="search-results">
+        <h1>
+            Search results for: <span class="query"></span>
+        </h1>
+    </section>
+<!--    <aside class="sidebar">-->
+<!--        <div class="chat">-->
+<!--            <div class="chat__messages">-->
+
+<!--            </div>-->
+
+<!--            <form class="chat__form">-->
+<!--                <input class="chat__input" name="msg" placeholder="enter your message" type="text">-->
+<!--                <button class="chat__btn">-->
+<!--                    <span class="material-symbols-outlined">-->
+<!--                        arrow_forward_ios-->
+<!--                    </span>-->
+<!--                </button>-->
+<!--            </form>-->
+<!--            <button class="chat__exit">left chat</button>-->
+<!--        </div>-->
+<!--    </aside>-->
+</main>
+
+
+<script src="js/main.js"></script>
+
+<!--<script src="js/chat.js"></script>-->
+</body>
+</html>

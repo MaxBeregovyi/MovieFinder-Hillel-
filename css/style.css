@@ -1,0 +1,103 @@
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a, button {
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.--error {
+  border-color: #ff0000;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 220px;
+}
+
+.sidebar {
+  padding-left: 20px;
+  border-left: 1px solid #000;
+  display: block;
+}
+
+.chat__form {
+  display: flex;
+}
+.chat__input {
+  max-width: 180px;
+}
+
+li, a {
+  list-style: none;
+  text-decoration: none;
+}
+
+.msg {
+  display: block;
+}
+.msg--error {
+  background: tomato;
+  color: #fff;
+}
+.msg--open {
+  background: aqua;
+}
+.msg--close {
+  background: orange;
+}
+.msg--inbound {
+  background: forestgreen;
+}
+.msg--outcome {
+  background: cadetblue;
+}
+
+.form {
+  display: flex;
+  max-height: 30px;
+  border-radius: 20px;
+}
+
+.find__films {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.find__films h3 {
+  font-size: 18px;
+}
+
+.find__films--list {
+  list-style-type: none;
+  padding: 0;
+}
+.find__films--list li {
+  color: #2d2a2a;
+  font-size: 16px;
+}
+
+.movie__finder {
+  display: flex;
+  gap: 20px;
+}
+
+.finder__title {
+  font-size: 30px;
+}
+
+/*# sourceMappingURL=style.css.map */
